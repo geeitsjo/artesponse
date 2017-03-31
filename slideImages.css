@@ -1,0 +1,300 @@
+/* Hero Images ----------------------------------- */
+.square-container {
+    max-width: 410px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.fake-square {
+    height: 410px;
+    width: 100%;
+    z-index: -1000;
+    position: relative;
+}
+
+.square-container .square-container-fern-mobile img {
+    display: none;
+}
+
+.square-container .square-container-computer-mobile img {
+    display: none;
+}
+
+.square-container .square-container-list-mobile img {
+    display: none;
+}
+
+.square-container * {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+}
+.skillzsqaure,
+.computersquare,
+.fernsquare,
+.pinkfernsquare,
+.fernsquare-mobile,
+.computer-mobile,
+.skillzsquare-mobile {
+    position: absolute;
+}
+
+.square-container-fern,
+.square-container-pinkfern,
+.square-container-computer,
+.square-container-list,
+.square-container-flamingo,
+.square-container-tv,
+.square-container-dolphin,
+.square-container-palmtree {
+    display: none;
+}
+
+.square-container-computer,
+.square-container-list,
+.square-container-fern,
+.square-container-pinkfern,
+.square-container-flamingo,
+.square-container-fern-mobile,
+.square-container-computer-mobile,
+.square-container-list-mobile,
+.square-container-tv,
+.square-container-dolphin,
+.square-container-palmtree {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Positions of hero images ----------------------------------- */
+
+/*Mobile ----------------------------------- */
+
+.square-container-fern-mobile {
+    top: 0px;
+    right: 50px;
+}
+
+.square-container-computer-mobile {
+    top: 280px;
+    right: -40px;
+}
+
+.square-container-list-mobile {
+    top: 35px;
+    right: 40px;
+    z-index: 2;
+}
+
+/*Desktop ----------------------------------- */
+
+.square-container-list {
+    top: 60px;
+    right: 250px;
+    padding-left: 62%;
+    max-width: none;
+    z-index: 4;
+}
+
+.square-container-computer {
+    top: 10px;
+    right: -40px;
+    z-index: 3;
+}
+
+.square-container-fern {
+    top: -80px;
+    right: -200px;
+    z-index: 1;
+}
+
+.square-container-palmtree {
+    top: 10px;
+    right: -40px;
+    z-index: 1;
+}
+
+.square-container-flamingo,
+.square-container-tv,
+.square-container-dolphin {
+    top: 10px;
+    right: -40px;
+    z-index: 1;
+}
+
+
+.skillzsqaure,
+.skillzsquare-mobile {
+    padding: 20px 20px 0 0;
+    opacity: 0;
+    animation: fadeInSlideLeft 0.4s forwards;
+    animation-delay: 0.3s;
+    /*The color of this svg was discovered by Cameron Rohani (twitter: @hotdog)*/
+}
+
+/* Depth indexes of hero images ----------------------------------- */
+
+.fernsquare {
+    opacity: 0;
+    z-index: -2;
+    animation: fadeInSlideLeft 0.8s forwards;
+    animation-delay: 0.6s;
+}
+
+.flamingosquare,
+.tvsquare,
+.dolphinsquare,
+.palmtreesquare {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+    animation-delay: 1.3s;
+}
+
+.fernsquare-mobile {
+    opacity: 0;
+    animation: fadeInSlideLeft 0.8s forwards;
+    animation-delay: 0.5s;
+}
+
+.computersquare,
+.computersquare-mobile {
+    opacity: 0;
+    z-index: -1;
+    transform: translate3d(20%,-4%,0);
+    animation: fadeInSlideRight 0.8s forwards;
+    animation-delay: 0.2s;
+    padding: 0 0 20px 20px;
+}
+
+/* Arrow container ----------------------------------- */
+.hero-container figure {
+    position: relative;
+    z-index: 10;
+    opacity: 0;
+    animation: fadeInSlideDown 1s forwards;
+    animation-delay: 0.7s;
+    pointer-events: none;
+}
+.arrow-image-holder {
+    text-align: left;
+    max-width: 410px;
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .square-container-fern-mobile,
+    .square-container-computer-mobile,
+    .square-container-list-mobile {
+        display: none;
+    }
+    .fernsquare,
+    .computersquare,
+    .flamaingosquare,
+    .pinkfernsquare,
+    .tvsquare,
+    .dolphinsquare,
+    .palmtreesquare {
+        max-width: none;
+        display: block;
+    }
+    .arrow-image {
+        width: 30px;
+    }
+    .square-container-list {
+        padding-left: 30%;
+    }
+    .fake-square {
+        padding-top: 110px;
+    }
+    .square-container-computer,
+    .square-container-fern,
+    .square-container-pinkfern,
+    .square-container-list,
+    .square-container-flamingo,
+    .square-container-tv,
+    .square-container-dolphin,
+    .square-container-palmtree {
+        display: block;
+    }
+}
+
+.square-container img {
+    max-width: 350px;
+}
+
+@media(min-width: 750px) {
+    .square-container-list {
+        padding-left: 15%;
+    }
+    .square-container img {
+        max-width: none;
+    }
+    .fake-square {
+        padding-top: 100px;
+    }
+    .hero-container figure {
+        animation-delay: 2s;
+        padding: 0;
+    }
+    .arrow-image-holder {
+        display: block;
+        position: relative;
+        position: relative;
+        left: 35%;
+        top: -40px;
+    }
+}
+
+@media(min-width: 1000px) {
+    .hero-container figure {
+        animation-delay: 2s;
+    }
+    .fake-square {
+        padding-top: 30px;
+    }
+    .arrow-image-holder {
+    }
+}
+
+.tldr-container {
+    overflow: auto;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tldr {
+    font-size: 14px;
+    float: left;
+    max-width: 600px;
+    margin: 50px auto 50px auto;
+    line-height: 40px;
+    padding: 80px 30px 0 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+footer .tldr {
+    padding: 20px 30px 0 30px;
+    margin: 0px auto 50px auto;
+}
+
+@media (min-width: 550px) {
+    .tldr {
+        font-size: 16px;
+        text-align: left;
+        margin: 80px auto 80px auto;
+    }
+}
+
+@media (min-width: 750px) {
+    .tldr {
+        padding: 0px 20px 0 20px;
+    }
+}

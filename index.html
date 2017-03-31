@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="website.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="animations.css">
+	<link rel="stylesheet" type="text/css" href="typography.css">
+	<link rel="stylesheet" type="text/css" href="slideImages.css">
+	<title> arteponse </title>
+	<link rel="icon" type="image/png" href="images/issueImages/stepThreeW.png" >
+</head>
+<body>
+	<!-- &#8801 -->
+	<div class="topnav fadeIn" id="myTopnav">
+		<a class="active" href="index.html">Home</a>
+		<a href="#project">Need</a>
+		<a href="#issue">App</a>
+		<a href="#about">Features</a>
+		<a href="#plan">Plan</a>
+		<a href="javascript:void(0);" style="font-size:10px;" class="container " onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</a>
+	</div>
+
+	<script>
+		function myFunction(x) {
+			x.classList.toggle("change");
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+
+	<div id="home">
+		<header>
+			<a class="volume-button link-underline">
+				<span>(mute song)</span>
+				<span style="display:none">
+					(play song)
+				</span></a>
+			</header>
+			<div class="fadeIn mainTitle">
+				artesponce
+			</div>
+			<div id="foo"> &nbsp; </div>
+			<script>
+				$( window ).resize(function() {
+					$("#foo").text($( window ).width() + "w " + " x " + $( window ).height() + "h ");
+				});
+			</script>
+		</div> 
+
+		<div id="page1" class="block-project">
+			<a id="project" class="smooth"></a>
+			<div class="title-project">
+				the need
+			</div> 
+			<div class="cols-one">
+				<div class="text-middle__white">
+					More and more people are no longer interested in visiting art galleries.
+					Most people cannot understand the art and the find it boring when visiting an art space.
+					Arteponse challenges the idea of a typical walk in and look at art when visiting gallery spaces. We want visitors to have a great and memorable and almost spiritual experience when visiting galleries.
+				</div>
+			</div>
+		</div>
+
+		<div id="page2" class="block-issue">
+			<a id="issue" class="smooth"></a>
+			<div class="hvr-underline-from-center title-blue">
+				the app
+			</div>
+			<div class="cols-one">
+				<div class="text-middle__black">
+					<p>
+						Arteponse is an innovative mobile app that allows you to have an absolute different experience when visiting art galleries. Arteponse transforms static art images to stunning slow motion shots. You are invited to listen and read the inspiration and the story behind the artwork, ultimately giving you enough knowledge and bases to fairly judge the art. The mobile app allows you to give a creative response to on an art piece like never before.
+						Your art gallery experience will be never be the same again!
+						An interactive, fun, and intimate visit awaits you with Arteponse.
+
+					</p>
+				</div>
+			</div>
+
+			<div class="cols-one">
+					<img src="images/issueImages/top.png" class="issueImage" style="position: absolute; z-index: 1;" />
+					<img src="images/issueImages/right.png" class="issueImage" style="position: absolute; z-index: 2;" />
+					<img src="images/issueImages/bottom.png" class="issueImage" style="position: absolute; z-index: 3;" />
+					<img src="images/issueImages/left.png" class="issueImage" style="position: absolute; z-index: 4;" />
+			</div>
+		</div>
+
+		<div id="page3" class="block-about">
+			<a id="about" class="smooth"></a>
+			<div class = "mainContainer--wrapper">
+				<div class="title-blue cols-one">
+					how it works
+				</div>
+
+				<div class="cols-two"></div>
+				<div class="cols-two">
+					<img src="images/issueImages/stepOneo.png" class="padding-top stepCounter1">
+					<div class="text-middle__white">
+						<p>
+							<strong> CAPTURE </strong>
+							<br>
+							Make static images move and smile
+						</p>
+						<p>
+							Capture static art pieces with your mobile camera and watch it come alive with Arteponse. Using Parallax 2.5D effect to make images move and smile, giving you a different experience when looking at art. By making static images move we hope you can have a unique connection and let you experience a different way of looking at pieces from the past, present, and the future.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="page3b" class="block-lol">
+			<div class = "mainContainer--wrapper">
+				<div class="cols-two"> </div>
+				<div class="cols-two">
+					<img src="images/issueImages/stepTwo.png" class="stepCounter1">
+					<div class="text-middle__white">
+						<p>
+							<strong> LISTEN </strong>
+							<br>
+							Listen to the artist tell you a story
+						</p>
+						<p>
+							Read and listen as the artist describes the inspiration and story behind the art piece. Giving you more knowledge about the piece and allowing you to have an intimate connection to it. Stories and art walk hand-in-hand. Don’t miss the back story of every beauty anymore.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3c" class="block-lolo">
+			<div class = "mainContainer--wrapper">
+
+				<div class="cols-two">
+					<img src="images/issueImages/stepThreeW.png" class="stepCounter">
+					<div class="text-middle__black">
+						<p>
+							<strong> FEEL </strong>
+							<br>
+							Share your thoughts and feelings
+						</p>
+						<p>
+							Increase your interaction with the art in a different and more personalized way. 
+							Arteponse allows you to be more engaged with the art itself by giving you the ability to express your opinion on the piece. You can release your thoughts by giving feedback or reacting to the art, and you can even come up with a creative response by drawing on a canvas on the app. This will allow the audience to have a more interactive relationship with the art and expressing their feelings and thoughts as they observe, analyze, and feel the artwork they are looking at. 
+						</p>
+					</div>
+
+					<img src="images/issueImages/stepFourW.png" class="stepCounter">
+					<div class="text-middle__black">
+						<p>
+							<strong> EXPLORE </strong>
+							<br>
+							Find out what other people feel around the space
+						</p>
+						<p>
+							Using the data we extract from the publics reactions and expressions the app creates a map of emotions. The app documents the collective mood of the art piece and allow people to consider the unique factors that influence how we feel. It also allows the gallery to have an idea of how their visitors feel about certain pieces. It also lets the user leave their mark on the gallery by voicing their opinion and emotion on the gallery’s emotion map.
+						</p>
+					</div>
+				</div>
+				<div class="cols-two">
+					<img src="images/appImages/appDemo.gif" class="apptDemo">
+				</div>
+			</div>
+
+		</div>
+
+		<div id="page4" class="block-plan">
+			<a id="plan" class="smooth"></a>
+			<div class = "mainContainer--wrapper">
+				<div class="title-white">
+					<h1> .end </h1>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="website.js"></script>
+		<!-- TO PLAY A SONG -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+
+	</body>
+	</html>

@@ -1,0 +1,115 @@
+/*========================================*/	
+/* Global Components*/
+/*========================================*/
+@font-face {
+	font-family: navFont;
+	src: url(fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+	font-family: bodyFont;
+	src: url(fonts/GeosansLight.ttf);
+}
+
+body{
+	font-family: bodyFont;
+}
+
+h1{
+	text-align: center;
+	font-family: navFont;
+	font-size: 5em;
+}
+
+[class*='title-']{
+	text-align: center;
+	font-size: 5em;
+	padding:50px;
+	font-family: navFont;
+	
+}
+
+.title-blue{
+	color: #133749;
+}
+
+.title-white{
+	color: white;
+}
+
+
+/*========================================*/	
+/* Landing Page*/
+/*========================================*/	
+.mainTitle{
+	font-weight: bold;
+	height: 5em;
+	font-size: 8em;
+	display: flex;
+	color: white;
+	align-items: center;
+	font-family: navFont;
+	justify-content: center;
+	text-shadow: 2px 6px 50px black;
+}
+@media screen and (max-width: 575px) {
+	.mainTitle{
+		height: 7em;
+		font-size: 4em;
+	}
+}
+/*========================================*/	
+/* Project Page*/
+/*========================================*/	
+.title-project{
+	color: white;
+}
+
+[class*='text-middle__']{
+	text-align: justify;
+	padding-bottom: 60px;
+	vertical-align:middle;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20em;
+}
+
+.text-middle__white{
+	color:white;
+}
+
+.text-middle__black{
+	color: black;
+}
+
+.block-lolo{
+	color: black;
+}
+
+.padding-top{
+	padding-top: 30px;
+}
+/*========================================*/	
+/* Issue Page*/
+/*========================================*/	
+.whiteTextBody{
+	color: black;
+	text-align: justify;
+}
+
+h2{
+	text-align: left;
+	font-size: 3em;
+	font-family: navFont;
+}
+
+/*========================================*/	
+/* Plan Page*/
+/*========================================*/	
+
+
+
+/*========================================*/	
+/* Other*/
+/*========================================*/	
+
