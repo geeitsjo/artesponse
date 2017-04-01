@@ -15,12 +15,6 @@ body{
 	font-family: bodyFont;
 }
 
-h1{
-	text-align: center;
-	font-family: navFont;
-	font-size: 5em;
-}
-
 a { color: white; text-decoration:none }
 a:hover{ color: grey; }
 
@@ -36,7 +30,6 @@ a:hover{ color: grey; }
 		padding: 0px;
 		padding-top: 20px;
 		font-size: 5em;
-
 	}
 }
 
@@ -45,11 +38,9 @@ a:hover{ color: grey; }
 		padding: 0px;
 		padding-top: 10px;
 		font-size: 4em;
-
 	}
 }
 
-*/
 .title-blue{
 	color: #133749;
 }
@@ -57,6 +48,20 @@ a:hover{ color: grey; }
 .title-white{
 	color: white;
 }
+
+.title-project{
+	color: white;
+}
+
+[class*='text-middle__']{
+	text-align: justify;
+	padding-bottom: 60px;
+	vertical-align:middle;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20em;
+}
+
 
 /*========================================*/	
 /* Landing Page*/
@@ -91,21 +96,6 @@ a:hover{ color: grey; }
 		transform: translate(-50%, -50%);
 	}
 }
-/*========================================*/	
-/* Project Page*/
-/*========================================*/	
-.title-project{
-	color: white;
-}
-
-[class*='text-middle__']{
-	text-align: justify;
-	padding-bottom: 60px;
-	vertical-align:middle;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20em;
-}
 
 .text-middle__white{
 	color:white;
@@ -122,27 +112,8 @@ a:hover{ color: grey; }
 .padding-top{
 	padding-top: 30px;
 }
-/*========================================*/	
-/* Issue Page*/
-/*========================================*/	
+
 .whiteTextBody{
 	color: black;
 	text-align: justify;
 }
-
-h2{
-	text-align: left;
-	font-size: 3em;
-	font-family: navFont;
-}
-
-/*========================================*/	
-/* Plan Page*/
-/*========================================*/	
-
-
-
-/*========================================*/	
-/* Other*/
-/*========================================*/	
-
