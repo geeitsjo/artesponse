@@ -21,14 +21,54 @@ h1{
 	font-size: 5em;
 }
 
+a { color: white; text-decoration:none }
+a:hover{ color: grey; }
+
 [class*='title-']{
 	text-align: center;
 	font-size: 5em;
-	padding:50px;
+	padding:40px;
 	font-family: navFont;
 	
 }
+@media screen and (max-height: 500px) {
+	.title-project{
+		padding: 0px;
+		padding-top: 20px;
+		font-size: 5em;
 
+	}
+}
+
+@media screen and (max-height: 350px) {
+	.title-project{
+		padding: 0px;
+		padding-top: 10px;
+		font-size: 4em;
+
+	}
+}
+
+
+
+/*@media screen and (max-height: 575px) {
+	.title-project{
+	text-align: center;
+	font-size: 2em;
+	padding-top: 20px;
+	padding-bottom: 0px;
+	color: black;}
+	
+	.text-middle__white{
+		font-size: 0.8em;
+	}
+
+	.stepCounter1{
+		padding-bottom: 0px;
+	}
+
+}
+*/
 .title-blue{
 	color: #133749;
 }
@@ -36,6 +76,7 @@ h1{
 .title-white{
 	color: white;
 }
+
 
 
 /*========================================*/	
@@ -51,11 +92,24 @@ h1{
 	font-family: navFont;
 	justify-content: center;
 	text-shadow: 2px 6px 50px black;
+	position: absolute;
+  	
 }
 @media screen and (max-width: 575px) {
 	.mainTitle{
+		top: 20%;
 		height: 7em;
 		font-size: 4em;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media screen and (max-height: 550px) {
+	.mainTitle{
+		top: 1%;
+		height: 7em;
+		font-size: 4em;
+		transform: translate(-50%, -50%);
 	}
 }
 /*========================================*/	

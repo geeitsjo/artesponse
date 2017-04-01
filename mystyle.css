@@ -21,44 +21,18 @@ body	{
 	box-sizing: border-box;
 }
 
+.ui-draggable {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+.ui-draggable-dragging {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
 /*.........................................*/
 /* NAVBAR */	
 /*.........................................*/		
-/*nav {
-	list-style-type: none;
-	margin: 0;
-	width: 100%;
-	padding: 0;
-	overflow: hidden;
-	position: fixed;
-	background-color: white;
-	z-index: 5;
-}
-
-nav:hover{
-	background-color: #133749;
-	opacity: 0.9;
-}
-
-nav li {float: left;}
-
-nav li a {
-	display: block;
-	color: black;
-	font-family: navFont;
-	text-transform: uppercase;
-	text-align: center;
-	padding: 14px 35px;
-	letter-spacing: 3px;
-	text-decoration: none;
-}
-
-nav li a:hover:not(.active) {
-	background-color: #6aa0aa;
-	opacity: 1;
-
-}*/
-
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -94,7 +68,7 @@ nav li a:hover:not(.active) {
 }
 
 @media screen and (max-width: 600px) {
-	.topnav{position: static;}
+  .topnav{position: static;}
   .topnav a:not(:first-child) {display: none;}
   .topnav a.container {
     float: right;
@@ -147,30 +121,9 @@ nav li a:hover:not(.active) {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-
-
-
-
-/* NAV TITLE */
-#header	{
-	padding-right: 50px;
-	display: inline-block;
-	font-family: navFont;
-	font-weight: bold;
-	color: black; /* Wellington CRC WORD */
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-}
-
 /*========================================*/	
 /*Pages Set-up*/
 /*========================================*/	
-
-[class*='block-']{
-	width: 100%;
-	height:100%;
-}
 
 [class*='cols-']{
 	float:left;
@@ -185,6 +138,12 @@ nav li a:hover:not(.active) {
 	width: 50%;
 }
 
+[class*='too']{
+	float:left;
+	padding:10px;
+	width: 50%;
+}
+
 [class*='cols-three']{
 	width: 33.3%;
 }
@@ -192,6 +151,23 @@ nav li a:hover:not(.active) {
 header a {
 	cursor: pointer;
 	font-size: 14px;
+}
+
+.sub-white{
+	text-align: center;
+	font-size: 3em;
+	padding:40px;
+	font-family: navFont;
+	color: white;
+}
+
+.stores{
+	max-width: 50px;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 40px;
 }
 
 /*========================================*/	
@@ -205,7 +181,7 @@ header a {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
-	position: static; 
+	position: relative; 
 }	
 
 /*========================================*/	
@@ -221,6 +197,34 @@ header a {
 	height: 85%;
 	position: static; 
 }	
+
+.block-project, .mainTitle{
+	width: 100%;
+    text-align: center;
+    margin: auto;   
+}
+
+/*@media screen and (max-height: 553px){
+	#page1	{
+		width: auto;
+		height: auto;
+		overflow: auto;
+	}	
+
+
+	#page3{
+		width: 100%;
+		height: auto;
+		overflow: auto;
+	}
+
+
+	#page3b	{
+		width: auto;
+		height: auto;
+		overflow: auto;
+	}	
+}*/
 /*change colur when in small breakpoint*/
 
 /*========================================*/	
@@ -228,8 +232,6 @@ header a {
 /*========================================*/	
 #page2	{
 	background-color: white;
-	width: 100%;
-	height: auto;
 }	
 
 .block-issue{
@@ -262,6 +264,13 @@ header a {
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 40px;
+}
+
+@media screen and (max-height: 575px) {
+	.stepCounter1, .stepCounter{
+	padding-bottom: 10px;
+
+	} 
 }
 
 .apptDemo{
@@ -314,7 +323,8 @@ header a {
 	background-attachment: scroll;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	overflow: auto;
 	position: relative; 
 }	
 
@@ -326,26 +336,43 @@ header a {
 	background-size: cover;
 	width: 100%;
 	height: 100%;
+	overflow: auto;
 	position: relative; 
 }	
 
 #page3c{
 	background-color: white;
+		overflow: auto;
 }
 
-@media screen and (max-width: 700px) {
+.border-right{
+	border-right: thick double white;
+}
+
+/*@media screen and (max-width: 700px), screen and (max-height: 400px) {
 #page3{
 	width: 100%;
 	height: auto;
 	overflow: auto;
 }
-}
+}*/
 /*========================================*/	
 /* Plan Page*/
 /*========================================*/	
-.block-plan{
-	background-color: #133749;
-	overflow: auto;
+#page4{
+	background-image: url(images/background/downloanndImage.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 60%;
+	position: relative; 
+
+}
+
+.text-center{
+	text-align: center;
 }
 
 /*========================================*/	
@@ -353,12 +380,24 @@ header a {
 /*========================================*/	
 @media screen and (max-width: 600px) {
 	[class*='block-']{
-		width: auto;
+		width: 100%;
 		height: auto;
+		overflow: auto;
 	}
 
 	[class*='cols-']{
 		width: 100%;
+	}
+}
+
+@media screen and (max-height: 500px){
+	[class*='block-']{
+		width: 100%;
+		height: auto;
+	}
+
+	#page4{
+		height:80%;
 	}
 }
 
