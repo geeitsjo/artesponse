@@ -21,45 +21,41 @@ body	{
 	box-sizing: border-box;
 }
 
-.ui-draggable {
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-.ui-draggable-dragging {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
-}
 
+.volume-button{
+	color: black;
+	float: right;
+}
 /*.........................................*/
 /* NAVBAR */	
 /*.........................................*/		
 .topnav {
-  overflow: hidden;
-  background-color: white;
-  position: fixed;
-  width: 100%;
-  z-index: 5;
-  opacity: 0.95;
-  box-shadow: 0px 0px 30px 1px #000000;
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+	opacity: 0.95;
+	box-shadow: 0px 0px 30px 1px #000000;
 }
 
 .topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+	background-color: #ddd;
+	color: black;
 }
 
 .topnav .container {
-  display: none;
+	display: none;
 }
 
 #foo{
@@ -68,57 +64,57 @@ body	{
 }
 
 @media screen and (max-width: 600px) {
-  .topnav{position: static;}
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.container {
-    float: right;
-    display: block;
-  }
+	.topnav{position: static;}
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.container {
+		float: right;
+		display: block;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .container {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .container {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
 
 }
 
 .container {
-    display: inline-block;
-    cursor: pointer;
+	display: inline-block;
+	cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 2px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+	width: 35px;
+	height: 2px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.3s;
 }
 
 /* Rotate first bar */
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	transform: rotate(-45deg) translate(-9px, 6px) ;
 }
 
 /* Fade out the second bar */
 .change .bar2 {
-    opacity: 0;
+	opacity: 0;
 }
 
 /* Rotate last bar */
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
+	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 /*========================================*/	
@@ -200,8 +196,8 @@ header a {
 
 .block-project, .mainTitle{
 	width: 100%;
-    text-align: center;
-    margin: auto;   
+	text-align: center;
+	margin: auto;   
 }
 
 /*@media screen and (max-height: 553px){
@@ -224,130 +220,130 @@ header a {
 		height: auto;
 		overflow: auto;
 	}	
-}*/
-/*change colur when in small breakpoint*/
+	}*/
+	/*change colur when in small breakpoint*/
 
-/*========================================*/	
-/* Issue Page*/
-/*========================================*/	
-#page2	{
-	background-color: white;
-}	
+	/*========================================*/	
+	/* Issue Page*/
+	/*========================================*/	
+	#page2	{
+		background-color: white;
+	}	
 
-.block-issue{
-	overflow: auto;
-}
-
-.padding-bottom{
-	padding-bottom: 20px;
-}
-
-.square-container {
-	max-width: 410px;
-	width: 100%;
-	position: relative;
-	margin: auto;
-}
-
-.stepCounter1{
-	max-width: 40px;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 40px;
-}
-.stepCounter{
-	max-width: 80px;
-	height: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 40px;
-}
-
-@media screen and (max-height: 575px) {
-	.stepCounter1, .stepCounter{
-	padding-bottom: 10px;
-
-	} 
-}
-
-.apptDemo{
-	max-width: 500px;
-	height: auto;
-}
-
-
-.issueImage{
-	max-width: 800px;
-	height: auto;
-}
-
-@media screen and (max-width: 300px) {
-	.apptDemo{
-		max-width: 20%;
-		height: auto;
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-	}
-}
-
-@media screen and (max-width: 1200px) {
-	.apptDemo{
-		display: block;
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 80%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 900px) {	
-	.issueImage{
-		max-width: 50%;
-		height: auto;
-		margin-top: -100px;
-	}
-}
-
-
-/*========================================*/	
-/* About Page*/
-/*========================================*/	
-#page3	{
-	background-image: url(images/background/issueBack.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
-	width: 100%;
-	height: auto;
-	overflow: auto;
-	position: relative; 
-}	
-
-#page3b {
-	background-image: url(images/background/background2.jpg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-	background-size: cover;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	position: relative; 
-}	
-
-#page3c{
-	background-color: white;
+	.block-issue{
 		overflow: auto;
-}
+	}
 
-.border-right{
-	border-right: thick double white;
-}
+	.padding-bottom{
+		padding-bottom: 20px;
+	}
+
+	.square-container {
+		max-width: 410px;
+		width: 100%;
+		position: relative;
+		margin: auto;
+	}
+
+	.stepCounter1{
+		max-width: 40px;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 40px;
+	}
+	.stepCounter{
+		max-width: 80px;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 40px;
+	}
+
+	@media screen and (max-height: 575px) {
+		.stepCounter1, .stepCounter{
+			padding-bottom: 10px;
+
+		} 
+	}
+
+	.apptDemo{
+		max-width: 500px;
+		height: auto;
+	}
+
+
+	.issueImage{
+		max-width: 800px;
+		height: auto;
+	}
+
+	@media screen and (max-width: 300px) {
+		.apptDemo{
+			max-width: 20%;
+			height: auto;
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	@media screen and (max-width: 1200px) {
+		.apptDemo{
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 80%;
+			height: auto;
+		}
+	}
+
+	@media screen and (max-width: 900px) {	
+		.issueImage{
+			max-width: 50%;
+			height: auto;
+			margin-top: -100px;
+		}
+	}
+
+
+	/*========================================*/	
+	/* About Page*/
+	/*========================================*/	
+	#page3	{
+		background-image: url(images/background/issueBack.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		width: 100%;
+		height: auto;
+		overflow: auto;
+		position: relative; 
+	}	
+
+	#page3b {
+		background-image: url(images/background/background2.jpg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: scroll;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		position: relative; 
+	}	
+
+	#page3c{
+		background-color: white;
+		overflow: auto;
+	}
+
+	.border-right{
+		border-right: thick double white;
+	}
 
 /*@media screen and (max-width: 700px), screen and (max-height: 400px) {
 #page3{

@@ -49,25 +49,6 @@ a:hover{ color: grey; }
 	}
 }
 
-
-
-/*@media screen and (max-height: 575px) {
-	.title-project{
-	text-align: center;
-	font-size: 2em;
-	padding-top: 20px;
-	padding-bottom: 0px;
-	color: black;}
-	
-	.text-middle__white{
-		font-size: 0.8em;
-	}
-
-	.stepCounter1{
-		padding-bottom: 0px;
-	}
-
-}
 */
 .title-blue{
 	color: #133749;
@@ -76,8 +57,6 @@ a:hover{ color: grey; }
 .title-white{
 	color: white;
 }
-
-
 
 /*========================================*/	
 /* Landing Page*/
@@ -93,7 +72,7 @@ a:hover{ color: grey; }
 	justify-content: center;
 	text-shadow: 2px 6px 50px black;
 	position: absolute;
-  	
+
 }
 @media screen and (max-width: 575px) {
 	.mainTitle{
